@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  background-color: #fafafa;
   min-height: 100vh;
+}
+
+.appHeader{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  object-fit: contain;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between; /* space between all the elements present in the div*/
+}
+
+.appHeaderImage{
+  object-fit: contain;
+}
+
+
+/* POST */
+
+.post{
+  max-width: 500px;
+  background-color: white;
+  border: 1px solid lightgray;
+  margin-bottom: 45px;
+}
+
+.postsHolder{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.postHeading{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.postAvatar{
+  margin-right: 10px;
+}
+
+.postImage{
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.postCaption{
+  font-weight: normal;
+  padding: 20px;
+}
+
+.signUpForm{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.postsRight{
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* IMAGE UPLOAD */
+
+.imageUpload{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.progress{
+  width: 100%;
+}
+
+.postComments{
+  padding: 20px;
+}
+
+/* COMMENTS */
+
+.commentForm{
+  display: flex;
+  margin-top: 10px;
+}
+
+.commentInput{
+  flex: 1; /* We can use this line to give more priority to a child, if the parent div has only 2 children */
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+}
+
+.commentButton{
+  flex: 0; /* Lesser priority out of the 2 children  */
+  border: none;
+  border-top: 1px solid lightgray;
+  color: #6082a3;
+  background-color: transparent;
 }
