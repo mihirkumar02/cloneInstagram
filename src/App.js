@@ -204,6 +204,20 @@ function App() {
               ))
             }
           </div>
+          <div className="postsRight">
+            <InstagramEmbed 
+              url='https://www.instagram.com/p/B__pSWpHefj/'
+              maxWidth={320}
+              hideCaption={false}
+              containerTagName='div'
+              protocol=''
+              injectScript
+              onLoading={() => {}}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+            />
+          </div>
         </div>
 
 
